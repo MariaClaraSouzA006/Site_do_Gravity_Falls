@@ -1,0 +1,42 @@
+.image-box {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+
+.image-box .text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-01);
+    border: solid #000000;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.image-box:hover .text {
+    opacity: 1;
+}
+
+.image-box img:hover {
+    flex: 1.5;
+    width: 120%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}

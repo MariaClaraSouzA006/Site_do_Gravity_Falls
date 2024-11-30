@@ -1,0 +1,81 @@
+@import url('./background.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./paginas.css');
+@import url('./box.css');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Oswald:wght@200..700&family=Righteous&family=VT323&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Domine', serif;
+  text-align: justify;
+}
+
+:root {
+  --text: #EDF1F7;
+  --red: #C51212;
+  --blue: #0041C2;
+  --green: #14B02D;
+  --yellow: #ffc12b;
+  --black: #000;
+  --color-01: #100611;
+  --color-02: #1d0a1d;
+  --color-03: #559988;
+  --color-04: #221e26;
+  --color-05: #9cc0c5;
+  --color-06: #ffffff;
+  --color-07: #bac0b2;
+  --color-08: #d8bfd8;
+  --color-09: #fff;
+}
+
+body, button, a {
+  color: var(--text);
+  font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#rodape{
+  background-color: #221e26e4;
+  margin-top: 200px;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  clear: both;
+}
+
+#rodape p{
+  color: #a6e77e;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#rodape a{
+  color:var(--color-05);
+  text-decoration: none;
+}
+
+#rodape a:hover{
+  text-decoration: underline;
+}
